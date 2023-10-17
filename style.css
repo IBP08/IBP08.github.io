@@ -20,7 +20,7 @@ body{
 .header{
     min-height: 100vh;
     width: 100%;
-    background-image: linear-gradient(rgba(4, 30, 19, 0.7),#2d5626),url(Images/back2.jpg);
+    background-image: linear-gradient(rgba(4, 30, 19, 0.7),#2d5626),url(Images/back1.jpg);
     background-position: center;
     background-size: cover;
     position: relative;

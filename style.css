@@ -161,37 +161,6 @@ nav .fa-solid{
     }
 }
 
-@media(max-height: 700px){
-    .TextBox h1{
-        font-size: 40px;
-    }
-    .nav-links ul li{
-        display: block;
-    }
-    .nav-links{
-        width: 100%;
-        position: absolute;
-        background: #337e4d;
-        height: 100vh;
-        width: 200px;
-        top: 0;
-        right: -200px;
-        text-align: left;
-        z-index: 2;
-        transition: 1s;
-    }
-    nav .fa-solid{
-        display: block;
-        color: #fff;
-        margin: 10px;
-        font-size: 22px;
-        cursor: pointer;
-    }
-    .nav-links ul{
-        padding: 30px;
-    }
-}
-
 /*----overview------*/
 
 .overview{

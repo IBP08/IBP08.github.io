@@ -72,9 +72,6 @@ nav{
     width: 100%;
 
 }
-nav .fa-solid{
-    display: none;
-}
 
 .dropdown {
     position: relative;
@@ -110,33 +107,65 @@ nav .fa-solid{
     .dropdown:hover .dropdown-content {
     display: block;
     }
-    @media(max-width: 700px){
-        .TextBox h1{
-            font-size: 40px;
-        }
-        .nav-links ul li{
-            display: block;
-        }
-        .nav-links{
-            height: 100%;
-            width: 0;
-            position: fixed;
-            background-color: #337e4d;
-            top: 0;
-            right: 0;
-        }
-        nav .fa-solid{
-            display: block;
-            color: #fff;
-            margin: 10px;
-            font-size: 22px;
-            cursor: pointer;
-        }
-        .nav-links ul{
-            padding: 30px;
-        }
+
+.TextBox{
+    width: 90%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+
+.TextBox h1{
+    font-weight: lighter;
+    font-size: 100px;
+    color: #7fa758;
+}
+
+.TextBox span{
+    color: #fff;
+}
+
+.TextBox p{
+    font-size: 20px;
+}
+nav .fa-solid{
+    display: none;
+}
+
+@media(max-width: 700px){
+    .TextBox h1{
+        font-size: 20px;
     }
-    
+    .TextBox p{
+        font-size: 10px;
+    }
+    .nav-links ul li{
+        display: block;
+    }
+    .nav-links{
+        height: 100vh;
+        width: 200px;
+        position: absolute;
+        background-color: #337e4d;
+        top: 0;
+        right: 0;
+        text-align: left;
+    }
+    nav .fa-solid{
+        display: block;
+        color: #fff;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+    .nav-links ul{
+        padding: 30px;
+    }
+}  
+
+
 .copyright{
     width: 100%;
     text-align: center;

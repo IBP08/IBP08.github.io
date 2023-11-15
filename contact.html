@@ -88,7 +88,7 @@
             <input type="text" name="name" placeholder="Enter your name" required>
             <input type="email" name="email" placeholder="Enter your e-mail address" required>
             <textarea rows="8" name="message" placeholder="Message" required></textarea>
-            <button type="submit" class="hero-btn red-btn">Submit request</button>
+            <button type="submit" class="btn btn2">Submit request</button>
           
           </form>
 
@@ -96,43 +96,43 @@
 
       </div>
 
-    </section>
-        <div class="copyright">
-            <p>Copyright made by Earth Ignite<br> <img src="Images/Logo small.png"></p>
-          </div>
-          <script>
-          
-              var tablinks = document.getElementsByClassName("tab-links");
-              var tabcontents = document.getElementsByClassName("tab-contents");
-              function opentab(tabname){
-                for(tablink of tablinks){
-                  tablink.classList.remove("active-link");
-                }
-                for(tabcontent of tabcontents){
-                  tabcontent.classList.remove("active-tab");
-                }
-                event.currentTarget.classList.add("active-link")
-                document.getElementById(tabname).classList.add("active-tab")
-              }
-            
-            </script>
-            
-            <script>
-              function openSideMenu() {
-                  document.getElementById("sidemenu").style.display = "block";
-                  document.getElementById("main").style.marginLeft = "60%";
-              }
-              
-              function closeSideMenu() {
-                  document.getElementById("sidemenu").style.display = "none";
-                  document.getElementById("main").style.marginLeft = "-20%";
-              }
-          </script>
-        
-            <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-            
-            <script>
-              AOS.init();
-            </script>
-          </body>
-          </html>
+</section>
+<div class="copyright">
+  <p><img src="Images/Logo small.png"><br>Designed by your favourite tech support Hishaam Basheer</p>
+</div>
+<script>
+
+  var tablinks = document.getElementsByClassName("tab-links");
+  var tabcontents = document.getElementsByClassName("tab-contents");
+  function opentab(tabname){
+    for(tablink of tablinks){
+      tablink.classList.remove("active-link");
+    }
+    for(tabcontent of tabcontents){
+      tabcontent.classList.remove("active-tab");
+    }
+    event.currentTarget.classList.add("active-link")
+    document.getElementById(tabname).classList.add("active-tab")
+  }
+
+</script>
+
+<script>
+      function openSideMenu() {
+          document.getElementById("sidemenu").style.display = "block";
+          document.getElementById("main").style.marginLeft = "60%";
+      }
+      
+      function closeSideMenu() {
+          document.getElementById("sidemenu").style.display = "none";
+          document.getElementById("main").style.marginLeft = "-20%";
+      }
+  </script>
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+<script>
+  AOS.init();
+</script>
+</body>
+</html>

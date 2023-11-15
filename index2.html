@@ -1,130 +1,151 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>DXB MUN '22</title>
-
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-
-        <link rel="icon" type="image/x-icon" href="./images/icons/dxbmun logo white.png">
-
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-        <link rel="preload" href="loader.css" as="style" onload="this.rel='stylesheet'">
-        <link rel="stylesheet" href="style.css">
-
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    </head>
-    <body>
-        <div class="content" id="content">
-            <div class="section home">
-                <nav class="navbar navbar-dark navbar-expand-lg header" id="header">
-                    <div class="brand">
-                      <img src="./images/icons/dxbmun logo white.png">
-                      <div class="social-media">
-                        <img src="./images/icons/instagram.svg" onclick="window.open('https://www.instagram.com/dxbmun23/','_blank')" type="button">
-                        <img src="./images/icons/tiktok.svg" onclick="window.open('https://www.tiktok.com/@dxbmun23?_t=8YFFoq5HwJt&_r=1','_blank')" type="button">
-                      </div>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width", intial-scale="1">
+  <title>Earth Ignite</title>
+  <link rel="stylesheet" href="ipc.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link rel="icon" href="/Images/Transparent Logo.png">
+  <script src="https://kit.fontawesome.com/4082d2dfb2.js" crossorigin="anonymous"></script>
+  <script defer src="app.js"></script>
+  <style>   
+    .wrapingimage  
+    {  
+    float: left;     
+    }   
+    </style>  
+    
+</head>
+<body>
+    <section class = "header">
+        <nav>
+            <a href="index.html"><img class="LOGO" src="Images/Transparent Logo.png"></a>
+            <div class="nav-links" id="sidemenu">
+                <i class="fa-solid fa-xmark" onclick="closeSideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li class="dropdown">
+                      <button class="dropbtn">ABOUT</button> 
+                      <div class="dropdown-content"> 
+                        <a href="sec.html">SECRETARIAT</a>  
+                        <a href="eb.html">COMMITTEES</a>
+                        </div>
+                    <li><a href="ipc.html">IPC PAGE</a></li>
+                    <li><a href="https://drive.google.com/drive/folders/1bdskoe5Rvyey_0R8llE_qLlICQ3Bzcu4?usp=sharing" target="_blank">RESOURCES</a></li>
+                    <li><a href="contact.html">CONTACT US</a></li>
+                        </li>
+                      </div> 
                     </div>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse nav-items" id="navbarSupportedContent">
-                        <span class="link" id="index">Home</span>
-                        <div class="nav-item dropdown" style="overflow: visible;">
-                            <button class="nav-link dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Conference Details
-                            </button>
-                            <ul class="dropdown-menu dropdown-menu-dark" style="width: 100%;">
-                              <li><a class="dropdown-item link" id="secretariat" href="#">Secretariat</a></li>
-                              <li><a class="dropdown-item link" id="committees" href="#">Committees</a></li>
-                              <!--<li><a class="dropdown-item link" id="resources" href="#">Resources</a></li>-->
-                            </ul>
-                        </div>
-                        <span class="link" id="contact">Contact</span>
-                        <span href="#"><button id="applications" class="link applications">Applications</button></span>
-                    </div>
-                </nav>
-                <hr>
-                <div class="main">
-                    <p>The Indian High School <br>presents</p>
-                    <h1>DXB Model United Nations</h1>
-                    <h3>28th to 30th April 2023</h3>
-                </div>
-                <div class="countdown">
-                    <hr>
-                    <div id="count" class="count">
-                        <div class="unit">
-                            <h1>100</h1>
-                            <span>Days</span>
-                        </div>
-                        <div class="unit">
-                            <h1>40</h1>
-                            <span>Hours</span>
-                        </div>
-                        <div class="unit">
-                            <h1>40</h1>
-                            <span>Minutes</span>
-                        </div>
-                        <div class="unit">
-                            <h1>40</h1>
-                            <span>Seconds</span>
-                        </div>
-                    </div>
-                </div>
+                </ul>
             </div>
-            <div class="section address">
-                <h1>Secretary Generals' Address</h1>
-                <div class="sec-address">
-                    <div class="sec-photo">
-                        <img src="./images/secretariat/sg.jpg">
-                        <div class="names">
-                            Secretary Generals
-                            <span>Arshita Lakhani<br>Dhruv Toprani</span>
-                        </div>
-                    </div>
-                    <div class="letter">
-                        "Diplomacy is the ability to tell someone to go to hell in such a way that they ask for the directions." It is with great pleasure that we welcome you to DXBMUN 2023 by the Indian High School, Dubai. Having seen the crests and troughs of our Model UN careers together, it is our combined privilege to serve as your Secretary-Generals. The DXBMUN Team are working tirelessly to bring you a conference of a lifetime. Therefore, it is with great excitement we officially begin the countdown to DXBMUN 2023. The organizing committee strives to maintain the illustrious history of our prestigious institution, promote the idea of growth through diplomacy, and provide international exposure to all delegates. Model UN as a community has grown exponentially over the past few years. A platform where people are dedicated to the continuous pursuit of growth, and the idea of fraternity amidst competition. We cannot wait for you to embark upon your MUN journey and be a part of this one of a kind experience. And for those who've done this before, hold on to your placards because this is going to be one hell of a ride!
-                    </div>
-                    <img src="./images/circle-bottom.svg" id="circle">
-                </div>
-            </div>
-            <nav class="navbar navbar-dark navbar-expand-lg header" id="small">
-                <div class="brand">
-                  <img src="./images/icons/dxbmun logo white.png">
-                  <div class="social-media">
-                    <img src="./images/icons/instagram.svg" onclick="window.open('https://www.instagram.com/dxbmun23/','_blank')" type="button">
-                    <img src="./images/icons/tiktok.svg" onclick="window.open('https://www.tiktok.com/@dxbmun23?_t=8YFFoq5HwJt&_r=1','_blank')" type="button">
-                  </div>
-                </div>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse nav-items" id="navbarSupportedContent">
-                    <span class="link" id="index">Home</span>
-                    <div class="nav-item dropdown" style="overflow: visible;">
-                        <button class="nav-link dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Conference Details
-                        </button>
-                        <ul class="dropdown-menu dropdown-menu-dark" style="width: 100%;">
-                          <li><a class="dropdown-item link" id="secretariat" href="#">Secretariat</a></li>
-                          <li><a class="dropdown-item link" id="committees" href="#">Committees</a></li>
-                          <!--<li><a class="dropdown-item link" id="resources" href="#">Resources</a></li>-->
-                        </ul>
-                    </div>
-                    <span class="link" id="contact">Contact</span>
-                    <span class="link" id="applications"><button class="applications">Applications</button></span>
-                </div>
-            </nav>
+            <i class="fa-solid fa-bars" onclick="openSideMenu()"></i>
+        </nav>
+        <script src="https://js.bytescale.com/upload-widget/v4"></script>
+        <script>
+          // -----
+          // Configuration:
+          // https://www.bytescale.com/docs/upload-widget#configuration
+          // -----
+          const options = {
+            apiKey: "free", // Get API key: https://www.bytescale.com/get-started
+            maxFileCount: 1
+          };
+    
+          // import * as Bytescale from "@bytescale/upload-widget";
+          Bytescale.UploadWidget.open(options).then(
+            files => {
+              const fileUrls = files.map(x => x.fileUrl).join("\n");
+              const success = fileUrls.length === 0
+                ? "No file selected."
+                : `File uploaded:\n\n${fileUrls}`;
+              alert(success);
+            },
+            error => {
+              alert(error);
+            }
+          );
+        </script>
+        <script src="https://js.bytescale.com/upload-widget/v4"></script>
+        <script>
+          // -----
+          // Configuration:
+          // https://www.bytescale.com/docs/upload-widget#configuration
+          // -----
+          const options = {
+            apiKey: "free", // Get API key: https://www.bytescale.com/get-started
+    
+            maxFileCount: 10,
+    
+            // Dropzone configuration:
+            layout: "inline",
+            container: "#my-container",
+    
+            showFinishButton: true,
+    
+            // To remove the 'finish' button:
+            // showFinishButton: false,
+            // onUpdate: ({ uploadedFiles, pendingFiles, failedFiles }) => {
+            //   const fileUrls = uploadedFiles.map(x => x.fileUrl).join("\n");
+            //   if (fileUrls.length > 0) {
+            //     alert(`File(s) uploaded:\n\n${fileUrls}`);
+            //   }
+            // }
+          };
+    
+          // import * as Bytescale from "@bytescale/upload-widget";
+          Bytescale.UploadWidget.open(options).then(
+            files => {
+              const fileUrls = files.map(x => x.fileUrl).join("\n");
+              const success = fileUrls.length === 0
+                ? "No file selected."
+                : `File uploaded:\n\n${fileUrls}`;
+              alert(success);
+            },
+            error => {
+              alert(error);
+            }
+          );
+        </script>
+
+</section>
+        <div class="copyright">
+          <p><img src="Images/Logo small.png"><br>Designed by your favourite tech support Hishaam Basheer</p>
         </div>
-
-        <div id="preloader">
-            <div class="lds-ring"><div></div><div></div><div></div><div></div></div>
-        </div>   
-        
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
-        <script src='./nav.js'></script>
-        <script src='./script.js'></script>
-    </body>
-</html>
+          <script>
+          
+              var tablinks = document.getElementsByClassName("tab-links");
+              var tabcontents = document.getElementsByClassName("tab-contents");
+              function opentab(tabname){
+                for(tablink of tablinks){
+                  tablink.classList.remove("active-link");
+                }
+                for(tabcontent of tabcontents){
+                  tabcontent.classList.remove("active-tab");
+                }
+                event.currentTarget.classList.add("active-link")
+                document.getElementById(tabname).classList.add("active-tab")
+              }
+            
+            </script>
+            
+            <script>
+                  function openSideMenu() {
+                      document.getElementById("sidemenu").style.width = "60%";
+                      document.getElementById("main").style.marginLeft = "60%";
+                  }
+                  
+                  function closeSideMenu() {
+                      document.getElementById("sidemenu").style.width = "0";
+                      document.getElementById("main").style.marginLeft = "-20%";
+                  }
+              </script>
+            
+            <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+            
+            <script>
+              AOS.init();
+            </script>
+          </body>
+          </html>
